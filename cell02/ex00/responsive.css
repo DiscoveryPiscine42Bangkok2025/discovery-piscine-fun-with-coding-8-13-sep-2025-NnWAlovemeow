@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    height: 50vh;
+    background: #000;
+}
+
+th {
+    width: 50%;
+    text-align: left;
+}
+
+th.aqua {
+    background: aqua;
+}
+
+th.chartreuse {
+    background: chartreuse;
+}
