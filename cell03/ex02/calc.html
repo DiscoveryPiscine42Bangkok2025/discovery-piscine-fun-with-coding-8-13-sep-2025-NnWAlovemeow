@@ -40,7 +40,7 @@
             <option value="%">%</option>
         </select>
         <input style="width: 50px;" type="number" id="rightOperand">
-        <input type="submit" value="Try me!" />
+        <input type="submit" value="Click!" />
     </form>
 
     <script>
@@ -50,8 +50,8 @@
             const rightOperand = parseInt(document.getElementById("rightOperand").value);
 
             if (isNaN(leftOperand) || isNaN(rightOperand) || leftOperand < 0 || rightOperand < 0) {
-                alert('Error :(');
-                console.error('Error :(');
+                alert('Error');
+                console.error('Error');
                 return;
             }
 
