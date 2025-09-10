@@ -1,0 +1,28 @@
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+
+  background-image: url(https://www.marumura.com/wp-content/uploads/2024/06/2024-Sanrio-Character-Awards.jpg);
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+
+  background-image: url(https://mitsui-shopping-park.com/lalaport/koshien/shopnews/3070030/image1.jpg);
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
