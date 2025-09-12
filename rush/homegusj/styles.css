@@ -13,7 +13,6 @@
     }
 
     body {
-        /* background-color: #DBEAFF; */
         background-image: url(gusj_pic/bg1.svg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -85,11 +84,8 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
-    /* Mobile */
+    
     @media screen and (max-width: 600px) {
-
-        /* Navbar */
         .navbg {
             width: 90%;
             padding: 10% 1rem;
