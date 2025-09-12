@@ -1,0 +1,117 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: micro5;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    @font-face {
+        font-family: micro5;
+        src: url(gusj_fonts/Micro5-Regular.ttf);
+    }
+
+    body {
+        /* background-color: #DBEAFF; */
+        background-image: url(gusj_pic/bg1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bg {
+        background: linear-gradient(#c8ffff, #739cd6);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bg3 {
+        background: linear-gradient(#739cd6, #c8ffff);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        position: fixed;
+        top: 0;
+    }
+
+    nav a {
+        font-size: 1.1em;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: .5s;
+    }
+
+    nav a:hover {
+        color: #008B8B;
+    }
+
+    .navbg {
+        width: 50%;
+        background-color: #0B1A2B;
+        border-radius: 80px;
+        word-spacing: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 86%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 10px;
+    }
+
+    .img {
+        width: 80%;
+        height: 250px;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 992px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Mobile */
+    @media screen and (max-width: 600px) {
+
+        /* Navbar */
+        .navbg {
+            width: 90%;
+            padding: 10% 1rem;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 1.2rem;
+        }
+
+        #about {
+            flex-direction: column;
+            padding: 15% 5%;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        #contact a img {
+            max-width: 40px;
+            margin: 0 5px;
+        }
+    }

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.homeone{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(hsl(176, 72%, 54%),white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: #3AAFA9;
+}
+a:hover{
+    text-decoration: underline;
+    color: #0B1A2B;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: #ffffff;
+    position: fixed;
+
+    font-family: "Goblin One", serif;
+    font-size: 26px;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right : 20px;
+    border: #0B1A2B;
+    border-radius: 25px;
+    background-color: #0b1a2b38;
+}
+.fish {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 10px;
+    height: auto;
+    z-index: 1000;
+    animation: swim 2s ease-in-out infinite;
+}
+@keyframes swim {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.name{
+    margin-right: 100px;
+    padding: 80px 0 0px 80px;
+    font-family: "Goblin One", serif;
+    font-size: 42px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.like{
+    padding-top: 100px;
+    padding-left: 100px;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 32px;
+    color: hsl(176, 62%, 30%);
+}
+.University{
+    padding:100px 0px 50px 100px;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 34px;
+    color: #1D7B76;
+}
+.me2{
+    margin-top: 10vh;
+}
+.s{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10vh;
+}
+.profile-wrapper {
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    margin-bottom: 5vh;
+}
+.frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    animation:rotate 3s ease-in-out infinite;
+}
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.me{
+    width:90%;
+    height: 90%;
+    left: 20px;
+    top: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-bottom: 2vh;
+    z-index: 1;
+}
+.skill{
+    padding-bottom: 2vh;
+    font-family: "Goblin One", serif;
+}
+.hometwo{
+    height: 100vh;
+    background:linear-gradient(white,hsl(176, 72%, 54%));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 100px;
+}
+.one{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 80; 
+    padding-top: 5%;
+}
+.halfDiv{
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    padding: 10px ;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.half{
+    
+    border-bottom: 2vh solid white; 
+    border-radius: 20px; 
+    width: 100%;
+    height: 75%;
+}
+.Half-body{
+    font-family: "Goblin One", serif;
+}
+
+.chibiDiv{
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    padding: 10px ;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.chibi{
+    border-bottom: 2vh solid white; 
+    border-radius: 20px; 
+    width: 100%;
+    height: 75%;
+}
+.chibijan{
+    font-family: "Goblin One", serif;
+}
+
+.homethree{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(hsl(176, 72%, 54%),white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px solid #000;
+}
+.homethree{
+    height: 100vh;
+    background:linear-gradient(hsl(176, 72%, 54%),white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px solid #000;
+}
+.img{
+    width: 12vh; 
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 650px) {
+    *{
+        box-sizing: border-box;
+    }
+    .nav{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        padding: 10px 0;
+        z-index: 3;
+    }
+    .homeone{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+    .name{
+        padding: 140px 0 0 100px;
+        font-size: 22px;
+    }
+    .like{
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    .University{
+        font-size: 18px;
+        padding:0px 0px 10px 0px;
+    }
+    .box{
+        padding: 0;
+        background:none;
+    }
+        
+    .profile-wrapper {
+        position: relative;
+        width: 40vh;
+        height: 40vh;
+        margin-bottom: 1vh;
+    }
+    .me2{
+        margin-top: 0vh;
+    }
+    .s{
+        margin-right: 0;
+    }
+    .me{
+        width:88%;
+        height: 88%;
+        left: 22px;
+        top: 22px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+    }
+    .skill{
+        padding-bottom: 1vh;
+        font-family: "Goblin One", serif;
+    }
+    .hometwo{
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .halfDiv{
+        width: 90%;
+        height: auto;
+        margin: 0 0 10vh 5vw;
+    }
+    .half{
+        border-bottom: 2vh solid white;
+        height: auto;
+    }
+    .chibiDiv{
+        margin: 0 0 5vh 5vw;
+        width: 90%;
+    }
+    .chibi{
+        border-bottom: 2vh solid white;
+        height: auto;
+    }
+    .homethree{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .social-links a {
+        width: 80%;
+        max-width: 250px;
+        font-size: 14px;
+    }
+}

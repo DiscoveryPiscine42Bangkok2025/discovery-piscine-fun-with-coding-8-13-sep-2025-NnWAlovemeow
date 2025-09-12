@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Sea Corner</title>
+    <link rel="icon" type="image/x-icon" href="pictures/sea.png">
+</head>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: micro5;
+        src: url(fonts/Micro5-Regular.ttf);
+    }
+
+    .body {
+        /* background-color: rgb(11, 26, 43); */
+        background-image: url(pictures/seabg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 85%;
+        height: 100vh;
+        font-family: micro5;
+        color: white;
+        text-align: center;
+    }
+
+    .block {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        z-index: 999;
+        animation: title 4s ease-in-out infinite;
+    }
+
+    @keyframes title {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+
+<body>
+    <div class="body">
+        <div class="block">
+            <div class="title">
+                <h1 style="font-size: 80px; color: navy; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">Welcome to our little corner of the sea,</h1>
+                <br>
+                <h2 style="font-size: 40px;">where ideas drift softly, glow warmly, and grow steadily <span
+                        style="color: rgb(253, 255, 149);">— just
+                        like jellyfish in the deep.</span></h2>
+                <div>
+                    <h2 style="padding-top: 10%; padding-bottom: 1%; font-size: 35px;">Created by</h2>
+                    <span style="font-size: 30px;"><a href="homeni/home.html" style="color: hsl(25, 100%, 85%);">wamornwo
+                            (Wannisa)</a> & <a href="homegusj/gusji.html" style="color: rgb(255, 194, 244);">Pakachaw
+                            (Patnagan)</a></span>
+                </div>
+                <div style="padding-top: 5%; color: rgb(255, 0, 0); font-size: 35px;">
+                    <h4>!! you can click our name to see our cv !!</h4>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
