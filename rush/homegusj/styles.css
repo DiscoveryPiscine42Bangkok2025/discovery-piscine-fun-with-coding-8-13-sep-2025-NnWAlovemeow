@@ -19,6 +19,10 @@
         width: 100vw;
         height: 100vh;
     }
+    .gg{
+        width: 100vw;
+        height: 100vh;
+    }
 
     .bg {
         background: linear-gradient(#c8ffff, #739cd6);
@@ -83,9 +87,27 @@
         .grid {
             grid-template-columns: repeat(2, 1fr);
         }
+        .gg{
+            width: 100vw;
+            height: 70vh;
+        }
+        .bg3 {
+            background: linear-gradient(#739cd6, #c8ffff);
+            width: 100vw;
+            height: 60vh;
+        }
     }
-    
+
     @media screen and (max-width: 600px) {
+        .gg{
+            width: 100vw;
+            height: 55vh;
+        }
+        .bg3 {
+            background: linear-gradient(#739cd6, #c8ffff);
+            width: 100vw;
+            height: 60vh;
+        }
         .navbg {
             width: 90%;
             padding: 10% 1rem;
